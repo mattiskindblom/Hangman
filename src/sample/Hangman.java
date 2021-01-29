@@ -5,11 +5,41 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Hangman {
-    public static void main(String[] args) {
-        String word = "programmering";
+    private static Object Programming;
+
+    public static String[] main(String[] args) {
+        String word1 = "programmering";
         String feedback = "_________";
         char guess = 'a';
-        if (word.contains("" + guess)) {
+        if (word1.contains("" + guess)) {
+
+            //Försöker hitta ett bra sätt att slumpa ett ord av 5 ord.//
+
+            public static String[] generateRandomWords(int numberOfWords)
+            {
+                String[] randomStrings = new String[numberOfWords];
+                Random random = new Random();
+                for(int i = 0; i < numberOfWords; i++)
+                {
+                    char[] word = new char[random.nextInt(8)+3];
+                    for(int j = 0; j < word.length; j++)
+                    {
+                        word[j] = (char)('a' + random.nextInt(26));
+                    }
+                    char[] house = new char[0];
+                    randomStrings[i] = new String(house);
+                    char[] coffin = new char[0];
+                    randomStrings[i] = new String(coffin);
+                    char[] gravel = new char[0];
+                    randomStrings[i] = new String(gravel);
+                    char[] shove = new char[0];
+                    randomStrings[i] = new String(shove);
+                    char[] apple = new char[0];
+                    randomStrings[i] = new String(apple);
+                }
+                return randomStrings;
+            }
+
 
         }
         System.out.println(Arrays.toString(positions));
