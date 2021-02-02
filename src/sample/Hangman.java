@@ -12,10 +12,7 @@ public class Hangman {
         String feedback = "_________";
         char guess = 'a';
         if (word1.contains("" + guess)) {
-
-            //Försöker hitta ett bra sätt att slumpa ett ord av 5 ord.//
-
-            public static String[] generateRandomWords(int numberOfWords)
+            public static String[] generateRandomWords(;int numberOfWords;)
             {
                 String[] randomStrings = new String[numberOfWords];
                 Random random = new Random();
@@ -42,6 +39,7 @@ public class Hangman {
 
 
         }
+        long[] positions;
         System.out.println(Arrays.toString(positions));
 
     }
